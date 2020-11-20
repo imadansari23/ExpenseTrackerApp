@@ -3,7 +3,7 @@ import { TransactionContext } from './transContext';
 
 export function AddTransaction(){
     const [desc, setDesc] = useState("");
-    const[amount, setAmount] =useState();
+    const[amount, setAmount] =useState(0);
     const {addTransaction} = useContext(TransactionContext);
     const onSubmit = (e) => {
         e.preventDefault();
@@ -17,7 +17,7 @@ export function AddTransaction(){
             amount : +amount,
             desc
         }
-        setAmount();
+        setAmount(0);
         setDesc("");
         addTransaction(newTransaction);
     }}
