@@ -9,7 +9,7 @@ export function AddTransaction(){
         e.preventDefault();
 
         if (amount === 0 && desc === "") {
-            alert("PLEASE FILL ALL THE FIELDS")
+            alert("PLEASE FILL ALL THE FIELDSSSSSS")
         }else{
 
         const newTransaction = {
