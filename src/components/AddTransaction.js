@@ -17,7 +17,7 @@ export function AddTransaction(){
             amount : +amount,
             desc
         }
-        setAmount(0);
+        setAmount();
         setDesc("");
         addTransaction(newTransaction);
     }}
